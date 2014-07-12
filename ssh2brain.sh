@@ -9,7 +9,7 @@
 SSH_KEY="$(cat ~/.ssh/id_rsa | grep -v "RSA PRIVATE" | tr -d '\n')"
 echo -en "How many characters do you want to print in one moment? (recommended is 2 or 4): " 
 read N
-echo -en "Set speed of text in seconds (recommended is 0.3): "
+echo -en "Set speed of running characters in seconds (recommended is 0.3): "
 read SPEED
 I=$((1-N))
 N_INC=$((N-1))
